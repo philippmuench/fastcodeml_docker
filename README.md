@@ -21,8 +21,8 @@ then you can access your data inside the docker container in the `/data` folder
 
 # usuage
 
-input nucleotide msa data must be in phylip format
-input tree must be in newick format (e.g. by using clearcut)
+input codon alignment data must be in phylip format (e.g. pal2nal output)
+input tree must be in newick format
 
 for v.1.3.0: `fast -m 22 -bl -nt 1 -hy 0 data/tree.nwk data/msa.phy`
 
