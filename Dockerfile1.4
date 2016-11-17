@@ -14,10 +14,7 @@ ENV MATH_LIB_NAMES openblas;lapack
 COPY config.txt /usr/src/CMakeLists.txt 
 
 RUN cd /usr/src \
-# && git clone https://gitlab.isb-sib.ch/phylo/fastcodeml.git \
- && wget ftp://ftp.vital-it.ch/tools/FastCodeML/FastCodeML-1.1.0.tar.gz \
- && tar xvzf FastCodeML-1.1.0.tar.gz \
- && mv FastCodeML-1.1.0 fastcodeml \
+ && git clone https://gitlab.isb-sib.ch/phylo/fastcodeml.git \
  && cd fastcodeml \
  && cp ../CMakeLists.txt . \
  && cmake . \
